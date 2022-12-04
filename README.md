@@ -2,25 +2,25 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-- 
-- [🛠 Tech Stack](#tech-stack)
-- 
-- [🚀Key Features](#key-features)
-- 
-- [💻 Product Specification](#product-specification)
-- 
-- [⭐️ Usage](#usage)
-- 
-- [🔭 Project Status](#project-status)
-- 
-- [👥 Collaboration](#collaboration)
-- 
-- [🤝 Contributors](#contributors)
-- 
-- [📝 Documentation](#documentation)
-- 
-- [🙏 Acknowledgements](#acknowledgements)
+[📖 About the Project](#about-project)
+ 
+[🛠 Tech Stack](#tech-stack)
+ 
+[🚀Key Features](#key-features)
+ 
+[💻 Product Specification](#product-specification)
+ 
+[⭐️ Usage](#usage)
+ 
+[🔭 Project Status](#project-status)
+ 
+[👥 Collaboration](#collaboration)
+ 
+[🤝 Contributors](#contributors)
+ 
+[📝 Documentation](#documentation)
+ 
+[🙏 Acknowledgements](#acknowledgements)
 
 # 📖 About the Project <a name="about-project"></a>
 

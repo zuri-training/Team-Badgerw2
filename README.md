@@ -1,6 +1,9 @@
 # Team-Badgerw2
+
 📗 Table of Contents
+
 📖 About the Project
+
 🛠 Tech Stack
 🚀Key Features
 💻 Product Specification

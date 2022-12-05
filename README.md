@@ -180,9 +180,9 @@ Boluwatife Ogunmola - Product Design
 
 Temitope Adekunle - Product Design
 
-Baliki - Product Design
+Balikis Raji - Product Design
 
-Daniella - Product Design
+Daniella Adoga - Product Design
 
 Akintola Daniel Fisayo - Product Design
 
@@ -194,11 +194,11 @@ Jen Ezieke - Product Design
 
 Kehinde Oyeronke Osoba - Frontend
 
-Prince - Frontend
+Prince Aguguo - Frontend
 
-Mubarak - Frontend
+Mubarak Misbaudeen - Frontend
 
-Beatrice - Frontend
+Beatrice Muchoki - Frontend
 
 Batatope Eyitayo - Frontend and Nodejs
 

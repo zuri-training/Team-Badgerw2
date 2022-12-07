@@ -56,7 +56,7 @@
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.mysql.org/">MySQL</a></li>
+    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
   </ul>
 </details>
 

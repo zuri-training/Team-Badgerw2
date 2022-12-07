@@ -35,7 +35,7 @@
 <details>
   <summary>Design</summary>
   <ul>
-    <li><a href="https://www.figma.com/file/sMAp7j0y3UKCjxD4cXOgH9/User-Flow%2FUser-Stories-Alumni_donate?node-id=0%3A1&t=E0GPKtmeAn7Tx4hI-1">Figma</a></li>
+    <li><a href="https://www.figma.com/file/sMAp7j0y3UKCjxD4cXOgH9/User-Flow%2FUser-Stories-Alumni_donate?node-id=0%3A1&t=E0GPKtmeAn7Tx4hI-1">Figma Design Link</a></li>
   </ul>
 </details>
 
@@ -78,10 +78,10 @@
 
 # 🚀Key Features <a name="key-features"></a>
 
-- **[Unauthenticated users - An individual that has not registered to the alumni platform]**
+- **Unauthenticated users - An individual that has not registered to the alumni platform**
   User can view website Home page (Landing page). This page will contain:
   - An alumni tab with a CTA to Login or Create Account - About Us section - FAQs section - Contact Us section - Footer section
-- **[Authenticated Users - A user that has fully registered and has completed all the verification processes in the website]**
+- **Authenticated Users - A user that has fully registered and has completed all the verification processes in the website**
   Login to the platform
   Dashboard to edit profile
   Create new donate page
@@ -92,7 +92,7 @@
   List of Alumni
   Help and Support
   Log out
-- **[Donor - An individual that has been posted as a donor**
+- **Donor - An individual that has been posted as a donor**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

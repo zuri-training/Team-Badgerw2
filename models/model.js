@@ -3,8 +3,9 @@ const { Schema } = mongoose;
 
 const alumniSchema = new Schema(
   {
-    firstname: { type: String, required: true },
-    lastname: { type: String, required: true },
+    firstName: { type: String, required: true },
+    lastName: { type: String, required: true },
+    password: { type: String, required: true },
     dateOfBirth: { type: Date, required: true },
     gender: { type: String, required: true, enum: ["Male", "Female"] },
     email: { type: String, required: true, unique: true },
@@ -35,14 +36,15 @@ const donationsSchema = new Schema(
 
 const cardsSchema = new Schema(
   {
-    name: { type: mongoose.Schema.Types.ObjectId, ref: "users" },
-    expiry_date: Date,
-    card_number: Number,
+    name: String,
+    expiryDate: Date,
+    cardNumber: Number,
+    userDetails: { type: mongoose.Schema.Types.ObjectId, ref: "users" },
   },
   { timestamps: true }
 );
 
-const alumni = mongoose.model("alumnis", alumniSchema);
+const alumni = mongoose.model("alumni", alumniSchema);
 const donations = mongoose.model("donations", donationsSchema);
 const cards = mongoose.model("cards", cardsSchema);
 

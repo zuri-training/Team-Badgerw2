@@ -7,7 +7,7 @@ const loginController = require('../controllers/login');
 const userController = require('../controllers/userscontroller');
 //const donateController = require('../controllers/donate');
 router.use(express.static('public'));
-router.use(express.static('frontend'));
+
 /* GET home page. */
 router.get('/', landingController.landingCont);
 router.get('/login',loginController.loginCont );

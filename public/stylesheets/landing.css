@@ -1,0 +1,168 @@
+
+body {
+  font-family: 'Inter';
+  font-style: normal;
+}
+.nav-bar{
+  display: flex; 
+ justify-content: end;
+ width: 100%;
+  background-color: #319DFF;
+margin-top: 10px;
+ }
+.nav-link{
+  text-decoration: none;
+  margin: 10px;
+  margin-right: 30px;
+  color: #092C4C;
+}
+.home{
+  padding: 10px 10px;
+  gap: 10px;
+  color: #FFFFFF;
+  width: 66px;
+  height: 31px;
+  background: #092C4C;
+}
+.bg-img{
+  background-image: url("image 2.png");
+  width: 100%;
+  height: 900px;
+  background-blend-mode: darken;
+}
+.header-logo{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 30%;
+}
+.image25{
+  width: 110px;
+  height: 70px;
+  margin-top: 15%;
+}
+.college-name{
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 39px;
+  color: #FFFFFF;
+  margin-top: 15%;
+    }
+.college-motto{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-left: 45%;
+    }
+.search-bar{
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20%;
+  }
+.search-img {
+  background-color: rgba(49, 157, 255, 1);
+  padding: 8px;
+  }
+  .search-input {
+    width: 1030px;
+    height: 50px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+  }
+.images{
+      width: 90%;
+      height: 800px;
+      margin-top: 5%;
+      margin-left: 5% ;
+}
+.image2{
+        object-fit: cover;
+}
+.text{
+      width: 90%;
+      font-weight: 400px;
+      font-size: 40px;
+      color: #000000;
+      margin: auto;
+    }
+  .button{
+    padding: 12.8px 80px;
+    width: 90%;
+    height: 90px;
+    background: #092C4C;
+    border-radius: 8px;
+    margin-left: 5%;
+}
+.buttontext{
+font-weight: 700;
+font-size: 40px;
+line-height: 22px;
+color: #FFFFFF;
+}
+.color-text{
+    color: #319DFF;
+}
+  footer{
+    background-color: #319DFF;
+    box-sizing: border-box;
+    width: 100%;
+    height: 766px;
+  }
+  .footer-logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  .grad-cap{
+    width: 142px;
+    height: 79px;
+    left: 507px;
+    top: 69px;
+  }
+  .footer-text{
+    margin-left: 50%;
+  }
+  .footer-text1{
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin-left: 70px;
+  }
+
+  .footer-text2{
+    display: flex;
+    float: right;
+    margin-right: 40px;
+  }
+  .footer-item{
+    margin: 50px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+      }
+
+.footer-text3{
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+color: #FFFFFF;
+margin-left: 40%;
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+}
+.icon {
+margin: 10px; 
+}
+.circle{
+border-radius: 50% ;
+padding: 1px;
+border-color: white;
+border-style: solid;
+border-width: 2px;
+}

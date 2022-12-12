@@ -2,6 +2,7 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
+var auth=require('auth')
 const landingController = require('../controllers/landing');
 const loginController = require('../controllers/login');
 const userController = require('../controllers/userscontroller');
@@ -9,10 +10,11 @@ const userController = require('../controllers/userscontroller');
 router.use(express.static('public'));
 
 /* GET home page. */
-router.get('/', landingController.landingCont);
-router.get('/login',loginController.loginCont );
-//router.get('/donate-new',donateController.donateCont );
-module.exports = router;
+router.get('/',auth.optional, landingController.landingCont);
+router.get('/login',auth.optional,userComtroller.login);
+router.get('/signup',auth.optional,userComtroller.signup);
+//router.get('/donate-new',auth.required, donateController.donateCont );
+
 
 
 module.exports = router;

@@ -10,10 +10,11 @@ const userController = require('../controllers/userscontroller');
 router.use(express.static('public'));
 
 /* GET home page. */
-router.get('/', auth.required, landingController.landingCont);
-router.get('/login',auth.optional,loginController.loginCont );
+router.get('/',auth.optional, landingController.landingCont);
+router.get('/login',auth.optional,userComtroller.login);
+router.get('/signup',auth.optional,userComtroller.signup);
 //router.get('/donate-new',auth.required, donateController.donateCont );
-module.exports = router;
+
 
 
 module.exports = router;

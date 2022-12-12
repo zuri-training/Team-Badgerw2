@@ -107,7 +107,7 @@ body {
       padding: 12.8px 80px;
       width: 90%;
       height: 90px;
-      background: #092C4C;
+      
       border-radius: 8px;
       margin-left: 5%;
   }
@@ -192,6 +192,7 @@ select{
 }
 
 .submit{
+  float: left;
   border: none;
   border-radius: 9px;
   font-size: 15px;
@@ -205,6 +206,9 @@ select{
   font-size: larger;
   padding-left: 10px;
   margin-left:20px;
+  text-decoration: none;
+  text-align: center;
+  
  
 }
 

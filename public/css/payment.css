@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-section {
+  height: 352px;
+  margin: 20px;
+  padding: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(/public/images/img/image\ 2.png) center / cover no-repeat;
+}
+.toggle-btn {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  transform: translate(-5%, -5%);
+}
+.logo {
+  width: 142px;
+  height: 79px;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+.header-text h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 39px;
+}
+.header-text h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+}
+.search-input {
+  width: 800px;
+  height: 30px;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+}
+.search-img {
+  background-color: rgba(49, 157, 255, 1);
+  width: 30px;
+}
+.pay-info h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 53px;
+}
+.amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px;
+}
+.amount .amount-input {
+  padding: 8px 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border: 1px solid rgba(49, 157, 255, 1);
+}
+.pay-title {
+  background-color: rgba(49, 157, 255, 1);
+  width: 1274px;
+  margin: 2rem auto 0 auto;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+}
+.details p {
+  margin-left: 40px;
+  margin-top: 25px;
+}
+span {
+  padding-left: 20rem;
+}
+.details .active {
+  padding: 21.8rem;
+}
+.payment-mode {
+  margin-left: 40px;
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+}
+.mode {
+  width: 1274px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem auto 0 auto;
+}
+.card-input {
+  width: 1274px;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card-input input {
+  padding: 8px 10px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgba(49, 157, 255, 1);
+}
+.payment-btn {
+  width: 1274px;
+  margin: 2rem auto;
+}
+button {
+  background-color: rgba(49, 157, 255, 1);
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 24px;
+}

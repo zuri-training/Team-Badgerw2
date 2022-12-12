@@ -39,7 +39,9 @@ text-align: left;
 }
 
 .nav-links a:hover {
-  text-decoration: underline blue;
+  /* text-decoration: underline blue; */
+   background: #092C4C;
+  color: white;
  }
 
 .menu-icon {

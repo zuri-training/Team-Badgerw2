@@ -9,7 +9,7 @@ const pageController = require('../controllers/createpage');
 ;
 router.use(express.static(path.join(__dirname, '../public')));
 /* GET home page. */
-router.get('/', landingController.landingcont);
-router.get('/donationform', donationFormController.donationPageCont);
-router.get('/create-donation', pageController.createPageCont);
+router.get('/', landingController);
+router.get('/donationform', donationFormController);
+router.get('/create-donation', pageController);
 module.exports = router;

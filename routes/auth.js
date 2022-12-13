@@ -1,27 +1,52 @@
 
-const jwt = require('express-jwt');
+var express = require('express');
+var router = express.Router();
+const bcrypt = require("bcrypt");
+var passport = require('passport');
+var LocalStrategy = require('passport-local');
+//var crypto = require('crypto');
+const alumni = require("../models/model").alumni;
+const connectToDb = require('../dbConnect');
+const userController = require('../controllers/usercontroller');
+const loginController = require('../controllers/logincontroller');
+const signupController = require('../controllers/signup');
 
-const getTokenFromHeaders = (req) => {
-  const { headers: { authorization } } = req;
+passport.use(new LocalStrategy({
+  usernameField: 'alumni[email]',
+  passwordField: 'alumni[password]',
+}, (email, password, done) => {
+  alumni.findOne({ email })
+    .then((alumni) => {
+      if (!alumni) {
+        return done(null, false, { errors: { 'email': 'is invalid' } });
+      }
+      const match = bcrypt.compare(req.body.password, alumni.password);
+      if (!match) {
+        return done(null, false, { errors: { 'password': 'is invalid' } });
+      }
+      return done(null, alumni);
+    }).catch(done);
+}));
 
-  if(authorization && authorization.split(' ')[0] === 'Token') {
-    return authorization.split(' ')[1];
-  }
-  return null;
-};
 
-const auth = {
-  required: jwt({
-    secret: 'secret',
-    userProperty: 'payload',
-    getToken: getTokenFromHeaders,
-  }),
-  optional: jwt({
-    secret: 'secret',
-    userProperty: 'payload',
-    getToken: getTokenFromHeaders,
-    credentialsRequired: false,
-  }),
-};
+router.get('/login', loginController.loginform);
 
-module.exports = auth;
+router.post('/login/password', passport.authenticate('local', {
+  successRedirect: '/dashbord',
+  failureRedirect: '/login'
+}));
+
+passport.serializeUser(function (alumni, cb) {
+  process.nextTick(function () {
+    cb(null, { id: alumni.id, username: alumni.username });
+  });
+});
+
+passport.deserializeUser(function (alumni, cb) {
+  process.nextTick(function () {
+    return cb(null, alumni);
+  });
+});
+router.get('/signup', signupController.signUpCont);
+router.post('/signup', userController.signup);
+module.exports = router;

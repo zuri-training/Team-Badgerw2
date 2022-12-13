@@ -11,8 +11,8 @@ router.use(express.static('public'));
 
 /* GET home page. */
 router.get('/',auth.optional, landingController.landingCont);
-router.get('/login',auth.optional,userComtroller.login);
-router.get('/signup',auth.optional,userComtroller.signup);
+router.get('/login',auth.optional,userController.login);
+router.get('/signup',auth.optional,userController.signup);
 //router.get('/donate-new',auth.required, donateController.donateCont );
 
 

@@ -15,7 +15,7 @@ const dashboardController = require('../controllers/dashboard');
 passport.use(new LocalStrategy({
   usernameField: 'alumni[email]',
   passwordField: 'alumni[password]',
-},function verify(email, password, done) => {
+},function verify(email, password, done){
   alumni.findOne({ email })
     .then((alumni) => {
       if (!alumni) {

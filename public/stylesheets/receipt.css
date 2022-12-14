@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-section {
+  height: 270px;
+  margin: 20px;
+  padding: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(/public/images/image\ 2.png) center / cover no-repeat;
+}
+.logo {
+  width: 142px;
+  height: 79px;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  margin: 10vh auto;
+}
+.pay-title {
+  background-color: rgba(9, 44, 76, 1);
+  width: 1320px;
+  margin: 2rem auto 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+button {
+  background-color: rgba(49, 157, 255, 1);
+  color: rgb(255, 255, 255);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(0, 192, 81, 1);
+  margin: 3rem auto;
+  display: grid;
+  place-items: center;
+}
+.circle .checkIcon {
+  width: 100px;
+  height: 100px;
+}
+.success-text h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+.success-text p {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 24px;
+}
+.btn {
+  margin: 3rem auto;
+  text-align: center;
+}
+.btn1 .btn-1 {
+  background-color: rgba(49, 157, 255, 1);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.btn2 .btn-2 {
+  color: rgba(49, 157, 255, 1);
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border: 1px solid #319dff;
+  font-weight: 700;
+  font-size: 24px;
+  width: 21%;
+}

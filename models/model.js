@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
+
 const alumniSchema = new Schema(
   {
     firstName: { type: String, required: true },
@@ -43,6 +44,8 @@ const cardsSchema = new Schema(
   },
   { timestamps: true }
 );
+
+
 
 const alumni = mongoose.model("alumni", alumniSchema);
 const donations = mongoose.model("donations", donationsSchema);

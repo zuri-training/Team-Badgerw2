@@ -47,6 +47,6 @@ passport.deserializeUser(function (alumni, cb) {
     return cb(null, alumni);
   });
 });
-router.get('/signup', signupController);
+router.get('/signup', signupController.signUpCont);
 router.post('/signup', userController.signup);
 module.exports = router;

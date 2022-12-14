@@ -1,20 +1,16 @@
-
 var express = require('express');
 var router = express.Router();
 var path = require('path');
-var auth=require('auth')
+
+
+
 const landingController = require('../controllers/landing');
-const loginController = require('../controllers/login');
-const userController = require('../controllers/userscontroller');
-//const donateController = require('../controllers/donate');
-router.use(express.static('public'));
-
+const loginController = require('../controllers/logincontroller');
+;
+router.use(express.static(path.join(__dirname, '../public')));
 /* GET home page. */
-router.get('/',auth.optional, landingController.landingCont);
-router.get('/login',auth.optional,userComtroller.login);
-router.get('/signup',auth.optional,userComtroller.signup);
-//router.get('/donate-new',auth.required, donateController.donateCont );
-
+router.get('/', landingController.landingcont);
+router.get('/login', loginController.loginform);
 
 
 module.exports = router;

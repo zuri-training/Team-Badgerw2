@@ -10,11 +10,12 @@ const connectToDb = require('../dbConnect');
 const userController = require('../controllers/usercontroller');
 const loginController = require('../controllers/logincontroller');
 const signupController = require('../controllers/signup');
+const dashboardController = require('../controllers/dashboard');
 
 passport.use(new LocalStrategy({
   usernameField: 'alumni[email]',
   passwordField: 'alumni[password]',
-}, (email, password, done) => {
+},function verify(email, password, done) => {
   alumni.findOne({ email })
     .then((alumni) => {
       if (!alumni) {
@@ -27,26 +28,26 @@ passport.use(new LocalStrategy({
       return done(null, alumni);
     }).catch(done);
 }));
+passport.serializeUser(function (alumni, done) {
 
+  done(null, { id: alumni.id, username: alumni.username });
+
+});
+
+passport.deserializeUser(function (id, done) {
+  alumni.findById(id, function (err, user) {
+    done(err, user);
+  });
+});
 
 router.get('/login', loginController.loginform);
 
 router.post('/login/password', passport.authenticate('local', {
-  successRedirect: '/dashbord',
   failureRedirect: '/login'
-}));
+}), dashboardController.dashboardcont
+);
 
-passport.serializeUser(function (alumni, cb) {
-  process.nextTick(function () {
-    cb(null, { id: alumni.id, username: alumni.username });
-  });
-});
 
-passport.deserializeUser(function (alumni, cb) {
-  process.nextTick(function () {
-    return cb(null, alumni);
-  });
-});
 router.get('/signup', signupController.signUpCont);
 router.post('/signup/alumni', userController.signup);
 module.exports = router;

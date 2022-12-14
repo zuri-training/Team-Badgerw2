@@ -3,13 +3,14 @@ var router = express.Router();
 var path = require('path');
 
 
-const donationFormController = require('../controllers/donationpageform');
+
 const landingController = require('../controllers/landing');
-const pageController = require('../controllers/createpage');
+const loginController = require('../controllers/logincontroller');
 ;
 router.use(express.static(path.join(__dirname, '../public')));
 /* GET home page. */
-router.get('/', landingController);
-router.get('/donationform', donationFormController);
-router.get('/create-donation', pageController);
+router.get('/', landingController.landingcont);
+router.get('/login', loginController.loginform);
+
+
 module.exports = router;

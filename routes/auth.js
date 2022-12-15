@@ -47,6 +47,13 @@ router.post('/login/password', passport.authenticate('local', {
 }), dashboardController.dashboardcont
 );
 
+router.get('/about',function(req,res){
+  res.render('about');
+})
+router.get('/faculties',function(req,res){
+  res.render('faculties');
+})
+
 
 router.get('/signup', signupController.signUpCont);
 router.post('/signup/alumni', userController.signup);

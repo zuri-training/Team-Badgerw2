@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 
-const alumniSchema = new Schema(
+/*const alumniSchema = new Schema(
   {
     firstName: { type: String, required: true },
     lastName: { type: String, required: true },
@@ -16,6 +16,25 @@ const alumniSchema = new Schema(
     yearOfGraduation: { type: Date, required: true },
     department: { type: String, required: true },
     faculty: { type: String, required: true },
+    donations: [{ type: mongoose.Schema.Types.ObjectId, ref: "donations" }],
+    cards: [{ type: mongoose.Schema.Types.ObjectId, ref: "cards" }],
+  },
+  { timestamps: true }
+);*/
+const alumniSchema = new Schema(
+  {
+    firstName: { type: String, required: true },
+    lastName: { type: String, required: true },
+    password: { type: String, required: true },
+    dateOfBirth: { type: String, required: true },
+    gender: { type: String, required: true, enum: ["Male", "Female"] },
+    email: { type: String, required: true, unique: true },
+    phoneNumber: { type: String },
+    yearOfEntry: { type: String },
+    registrationNumber: { type: String, required: true },
+    yearOfGraduation: { type: String},
+    department: { type: String },
+    faculty: { type: String},
     donations: [{ type: mongoose.Schema.Types.ObjectId, ref: "donations" }],
     cards: [{ type: mongoose.Schema.Types.ObjectId, ref: "cards" }],
   },

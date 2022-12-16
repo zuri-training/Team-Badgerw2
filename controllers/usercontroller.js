@@ -18,7 +18,7 @@ const signup = async (req, res) => {
       const faculty=req.body.faculty
     
 
-    if (
+  /*  if (
       !(
         email &&
         firstName &&
@@ -34,7 +34,7 @@ const signup = async (req, res) => {
       )
     ) {
       return res.status(400).send("All Input Is Required");
-    }
+    }*/
     const oldUser = await alumni.findOne({ email });
     if (oldUser) {
       return res.status(409).send("Alumni Exist, Please Login. ");

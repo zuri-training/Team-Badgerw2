@@ -4,19 +4,19 @@ const bcrypt = require("bcrypt");
 //SIGN UP NEW USERS
 const signup = async (req, res) => {
   try {
-    const {
-      email,
-      firstName,
-      lastName,
-      password,
-      dateOfBirth,
-      gender,
-      phoneNumber,
-      yearOfEntry,
-      registrationNumber,
-      yearOfGraduation,
-      faculty,
-    } = req.body;
+    
+      const email=req.body.email
+      const firstName= req.body.firstname
+      const lastName=req.body.lastname
+      const password= req.body.password
+      const dateOfBirth = req.body.dob
+      const gender= req.body.gender
+      const phoneNumber=req.body.phonenumber
+      const yearOfEntry=req.body.yearofadmission
+      const registrationNumber=req.body.regno
+      const yearOfGraduation=req.body.yearofgrad
+      const faculty=req.body.faculty
+    
 
     if (
       !(

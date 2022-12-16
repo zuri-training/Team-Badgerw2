@@ -20,7 +20,7 @@
  
 [📝 Documentation](#documentation)
 
-[Hosting link] (#hostinglink)
+[Hosting link](#hostinglink)
  
 [🙏 Acknowledgements](#acknowledgements)
 

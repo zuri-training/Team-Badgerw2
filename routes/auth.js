@@ -48,8 +48,7 @@ function isLoggedIn(req, res, next) {
 }
 router.get('/login', loginController.loginform);
 
-router.post('/login/password', passport.authenticate('local', dashboardController.dashboardcont
-);
+router.post('/login/password', dashboardController.dashboardcont);
 //router.get('/donationform', donationFormController.donationPageCont);
 router.get('/createpage', pageController.createPageCont);
 

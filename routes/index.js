@@ -10,6 +10,8 @@ const loginController = require('../controllers/logincontroller');
 router.use(express.static(path.join(__dirname, '../public')));
 /* GET home page. */
 router.get('/', landingController.landingcont);
+router.get('/home', landingController.landingcont);
+router.get('/index', landingController.landingcont);
 router.get('/login', loginController.loginform);
 
 

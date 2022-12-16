@@ -1,13 +1,13 @@
 var path = require('path');
-exports.donationPageCont=(req,res)=>{
-   
-    req.on('error',(error)=>{
-      console.log(error)
-      res.sendStatus(400)
-    }
-    )
-   
+exports.donationPageCont = (req, res) => {
 
-    res.sendFile(path.join(__dirname,"../frontend","/donationform.html"));
-   
+  req.on('error', (error) => {
+    console.log(error)
+    res.sendStatus(400)
+  }
+  )
+
+
+  res.render('donation');
+
 }

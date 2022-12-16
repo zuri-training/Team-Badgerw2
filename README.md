@@ -19,6 +19,8 @@
 [🤝 Contributors](#contributors)
  
 [📝 Documentation](#documentation)
+
+[Hosting link] (#hostinglink)
  
 [🙏 Acknowledgements](#acknowledgements)
 
@@ -213,6 +215,9 @@ Madu Emelie - Backend and Nodejs
 A more detailed documentation on the updates and details of this project can be found here - "documentationLinkWhenReady"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Hosting Link <a name="hostinglink"></a>
+https://teambadgerw2.onrender.com/
 
 # 🙏 Acknowledgments <a name="acknowledgements"></a>
 

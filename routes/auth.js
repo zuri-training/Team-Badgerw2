@@ -78,4 +78,10 @@ router.get('/academic', function (req, res) {
 router.get('/donate', function (req, res) {
   res.render('donate');
 })
+router.get('/alumni', function (req, res) {
+  res.render('alumni');
+})
+router.get('/contact', function (req, res) {
+  res.render('contact');
+})
 module.exports = router;

@@ -34,25 +34,25 @@
         <div>
             <h1 class="Sign-up">CREATE YOUR ALUMNI ACCOUNT</h1>
 
-            <form class="alumni">
+            <form class="alumni" action="/signup/alumni" method="POST">
                 <label class="action">First name</label>
                 <div class="input-field">
-                    <input type="text" placeholder="Olawale" id="F_name" required>
+                    <input type="text" placeholder="Olawale" id="F_name" name="firstname" required>
                 </div>
 
                 <label class="action">Middle name</label>
                 <div class="input-field">
-                    <input type="text" placeholder="Adamu">
+                    <input type="text" placeholder="Adamu"name="middlename">
                 </div>
 
                 <label class="action">Last name</label>
                 <div class="input-field">
-                    <input type="text" placeholder="Eze" id="L_name" required>
+                    <input type="text" placeholder="Eze" id="L_name" name="lastname" required>
                 </div>
 
                 <label class="action">Date of Birth</label>
                 <div class="input-field">
-                    <input type="date" placeholder="20/05/2000" id="date" required>
+                    <input type="date" placeholder="20/05/2000" name="dob" id="date" required>
                 </div>
 
                 <label>Gender</label>
@@ -68,34 +68,41 @@
 
                 <label class="action">Year of Admission</label>
                 <div class="input-field">
-                    <input type="text" placeholder="20/10/2011" id="YOA" required>
+                    <input type="text" placeholder="20/10/2011" id="YOA" name="yearofadmission" required>
                 </div>
 
                 <label class="action">Year of Graduation</label>
                 <div class="input-field">
-                    <input type="text" placeholder="20/19/2011" id="YOG" required>
+                    <input type="text" placeholder="20/19/2011" id="YOG" name="yearofgrad" required>
                 </div>
 
                 <label class="action">Faculty</label>
                 <div class="input-field">
-                    <input type="text" placeholder="Engineering" id="faculty" required>
+                    <input type="text" placeholder="Engineering" id="faculty" nname="faculty" required>
                 </div>
 
                 <label class="action">Department</label>
                 <div class="input-field">
-                    <input type="text" placeholder="Electrical and Electronics Engineering" id="department" required>
+                    <input type="text" placeholder="Electrical and Electronics Engineering" id="department" name="department" required>
                 </div>
 
                 <label class="action">Matric Number</label>
                 <div class="input-field">
-                    <input type="" placeholder="BAD/10/0476" id="matric-no" required>
+                    <input type="" placeholder="BAD/10/0476" id="matric-no" name="regno" required>
                 </div>
 
                 <label class="action">E-mail address</label>
                 <div class="input-field">
-                    <input type="email" placeholder="olawaleadameze@gmail.com" id="mail" required>
+                    <input type="email" placeholder="olawaleadameze@gmail.com" id="mail" name="email" required>
                 </div>
-
+                <label class="action">Password</label>
+                <div class="input-field">
+                    <input type="password" placeholder="*****" id="password" name="password" required>
+                </div>
+                <label class="action">Phone no</label>
+                  <div class="input-field">
+                    <input type="number" placeholder="08065289229" id="number" name="phoneno" required>
+                </div>      
                 <p>
                 <h4>Verify you are a student of our college by uploading your school identification card</h4>
                 </p>
@@ -109,7 +116,7 @@
         </div>
         <!-----------------SIGN UP---------------->
         <div class="input-field">
-            <a class="submit" href="/signup/alumni"><span class="button">SIGN UP</span></a>
+            <button type="submit"><span class="button">SIGN UP</span></button>
         </div>
 
         </form>

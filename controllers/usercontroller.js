@@ -12,10 +12,11 @@ const signup = async (req, res) => {
       const dateOfBirth = req.body.dob
       const gender= req.body.gender
       const phoneNumber=req.body.phonenumber
-      const yearOfEntry=req.body.yearofadmission
-      const registrationNumber=req.body.regno
-      const yearOfGraduation=req.body.yearofgrad
+      const yearOfEntry=req.body.yearofadmission.toString()
+      const registrationNumber=req.body.regno.toString()
+      const yearOfGraduation=req.body.yearofgrad.toString()
       const faculty=req.body.faculty
+      const department=req.body.department
     
 
   /*  if (

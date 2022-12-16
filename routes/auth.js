@@ -12,7 +12,7 @@ const loginController = require('../controllers/logincontroller');
 const signupController = require('../controllers/signup');
 const dashboardController = require('../controllers/dashboard');
 const pageController = require('../controllers/createpage');
-const donationFormController = require('../controllers/donationpageform');
+//const donationFormController = require('../controllers/donationpageform');
 
 
 passport.use(new LocalStrategy({
@@ -52,7 +52,7 @@ router.post('/login/password', passport.authenticate('local', {
   failureRedirect: '/login'
 }), dashboardController.dashboardcont
 );
-router.get('/donationform', isLoggedIn, donationFormController.donationPageCont);
+//router.get('/donationform', isLoggedIn, donationFormController.donationPageCont);
 router.get('/createpage', isLoggedIn, pageController.createPageCont);
 
 

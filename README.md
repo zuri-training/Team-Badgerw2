@@ -212,7 +212,7 @@ Madu Emelie - Backend and Nodejs
 
 # 📝 Documentation <a name="documentation"></a>
 
-A more detailed documentation on the updates and details of this project can be found here - "documentationLinkWhenReady"
+A more detailed documentation about the project can be found here - ["documentationLinkWhenReady"](https://docs.google.com/document/d/1sYlcZdyLXzLgWLW6g8EpZ0ggrH8G9UhCtojt8u3yM0U/edit)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

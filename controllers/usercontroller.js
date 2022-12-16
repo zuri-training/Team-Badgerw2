@@ -87,7 +87,7 @@ const login = async (req, res) => {
     } catch (error) {
       return res.status(500).send("An error occurred");
       }
-    }
-  };
+    };
+  
 
   module.exports = {signup, login}

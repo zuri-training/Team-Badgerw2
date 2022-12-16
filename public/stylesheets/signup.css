@@ -192,7 +192,6 @@ select{
 }
 
 .submit-button{
-  float: left;
   border: none;
   border-radius: 9px;
   font-size: 15px;

@@ -10,62 +10,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css"
         integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <%- include('./partials/headercss') %>
 </head>
 
 <body class="main-content">
     <div class="container">
+        <%- include('./partials/header') %>
 
-        <header>
-            <div class="menu-icon">
-                <img src="/images/menu.svg" alt="menu icon">
+            <h3 class="title">Create Donation Page</h3>
+            <section class="body-card">
+                <form class="payment" action="" method="POST">
+                    <div class="grid-item">
+                        <div class="flex-item">
+                            <div class="form-element">
+                                <label for="name">Name of Creator <span class="star">*</span></label>
+                                <input name="name" type="text" id="name" required>
+                            </div>
 
-            </div>
-            <div class="header-item">
-                <div class="grad-cap"><img src="/images/image 25.png" alt="graduation cap">
-                </div>
-                <div class="header-text">
-                    <h2>BADGERW2 COLLEGE</h2>
-                    <h3>Knowledge To The World</h3>
-                </div>
-            </div>
-
-        </header>
-        <h3 class="title">Create Donation Page</h3>
-        <section class="body-card">
-            <form class="payment" action="" method="POST">
-                <div class="grid-item">
-                    <div class="flex-item">
-                        <div class="form-element">
-                            <label for="name">Name of Creator <span class="star">*</span></label>
-                            <input name="name" type="text" id="name" required>
-                        </div>
-
-                        <div class="form-element">
-                            <label for="email">Email <span class="star">*</span> </label>
-                            <input type="text" id="email" name="email" required>
-                        </div>
+                            <div class="form-element">
+                                <label for="email">Email <span class="star">*</span> </label>
+                                <input type="text" id="email" name="email" required>
+                            </div>
 
 
-                        <div class="form-element">
-                            <label for="project-name">Project Name <span class="star">*</span></label>
-                            <input name="project-name" type="text" id="project-name" required>
+                            <div class="form-element">
+                                <label for="project-name">Project Name <span class="star">*</span></label>
+                                <input name="project-name" type="text" id="project-name" required>
+                            </div>
+                            <div class="form-element">
+                                <label for="project-target">Project Target <span class="star">*</span></label>
+                                <input name="project-target" type="text" id="project-target" required>
+                            </div>
                         </div>
                         <div class="form-element">
-                            <label for="project-target">Project Target <span class="star">*</span></label>
-                            <input name="project-target" type="text" id="project-target" required>
+                            <label for="about-project">About Project <span class="star">*</span></label>
+                            <textarea id="about" name="about" rows="22" cols=""></textarea>
                         </div>
                     </div>
-                    <div class="form-element">
-                        <label for="about-project">About Project <span class="star">*</span></label>
-                        <textarea id="about" name="about" rows="22" cols=""></textarea>
-                    </div>
-                </div>
-                <button class="btn-secondary" type="submit">Create Donation Page</button>
-            </form>
+                    <button class="btn-secondary" type="submit">Create Donation Page</button>
+                </form>
 
-        </section>
+            </section>
     </div>
+    <%- include('./partials/footer') %>
 </body>
 
 </html>

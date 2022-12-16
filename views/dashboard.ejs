@@ -13,97 +13,129 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/public/stylesheets/dashboard.css">
     <title>Dashboard</title>
-    <%- include('./partials/headercss') %>
 </head>
 
 <body>
-    <%- include('./partials/header') %>
 
+    <header>
+        <nav class="nav-bar">
+            <img src="/images/logo-1-1.png" alt="">
 
+            <input type="checkbox" id="toggle-menu">
+            <label class="menu-icon" for="toggle-menu">
+                <a id="menu-icon"><i class="fa fa-bars"></i></a>
+            </label>
 
-
-        <section class="user">
-            <h1>WELCOME OLAWALE ADAMU EZE</h1>
-            <div>
-                <img src="/images/Ellipse 30.svg" alt="" class="circle">
+            <div id="navigation-bar" class="nav-links">
+                <a href="home.html"> HOME </a>
+                <a href="about us.html"> ABOUT US</a>
+                <a href="alumni.html"> ALUMNI </a>
+                <a href="contact us.html"> CONTACT US </a>
             </div>
-        </section>
-
-        <hr class="hrLine">
-
-        <section>
-            <div class="maskG">
-                <img src="/images/Mask group.svg" alt="group picture">
-
-                <h1 class="groupH">ALUMNI NETWORK</h1>
-                <p class="groupP">Connect with your set, sets before and after.</p>
-
-                <a href="alumninetwork.html" target="_blank" class="btn-secondary" type="submit">ALUMNI NETWORK</a>
-            </div>
+        </nav>
+    </header>
 
 
-            <div class="donate">
-                <img src="/images/Frame 35.svg" alt="group picture">
+    <section class="hero-image">
+        <div class="hero">
+            <ul class="hero__lblock" style="margin-top: 150px">
+                <label for="hamburger"><img src="/public/images/hamburger.svg" alt=""></label>
+            </ul>
 
-                <h1 class="groupH">DONATE</h1>
-                <p class="groupP">As an alumni, you can make donations towards the development and upgrade of the
-                    college.
-                </p>
+            <ul class="hero__caplogo" style="margin-top: 150px">
+                <img class="logo" src="/public/images/grad-cap.svg" alt="logo">
+            </ul>
 
-                <a href="/donate" target="_blank" class="btn-secondary" type="submit">DONATE</a>
-            </div>
+            <ul class="hero-text">
+                <h1 class="hero-h1">BADGERW2 COLLEGE <p class="hero-p">Knowledge to the world</p>
+            </ul>
+        </div>
 
-            <div class="projects">
-                <img src="/images/Mask group(1).svg" alt="group picture">
+        <div class="search-bar">
+            <input class="search-input" width="1030px" height="50px" type="text">
+            <img class="search-img" src="/public/images/search-icon (1) 1.svg" alt="">
+        </div>
+    </section>
 
-                <h1 class="groupH">PROJECTS
-                </h1>
-                <p class="groupP">Follow the usage of donations by keep track of ongoing project happening in the
-                    college.
-                </p>
+    <section class="user">
+        <h1>WELCOME OLAWALE ADAMU EZE</h1>
+        <div>
+            <img src="/public/images/Ellipse 30.svg" alt="" class="circle">
+        </div>
+    </section>
 
-                <a href="/projects" target="_blank" class="btn-secondary" type="submit">PROJECTS</a>
-            </div>
+    <hr class="hrLine">
 
-            <div class="upcEvents">
-                <img src="/images/Frame 39.svg" alt="group picture">
+    <section>
+        <div class="maskG">
+            <img src="/public/images/Mask group.svg" alt="group picture">
 
-                <h1 class="groupH">UPCOMING EVENTS AND MEETINGS
-                </h1>
-                <p class="groupP">Explore upcoming events and meetings designed for Alumni to reconnect with other
-                    alumni of
-                    the
-                    college.</p>
+            <h1 class="groupH">ALUMNI NETWORK</h1>
+            <p class="groupP">Connect with your set, sets before and after.</p>
 
-                <a href="upcomingevents.html" target="_blank" class="btn-secondary" type="submit">UPCOMING EVENTS AND
-                    MEETINGS</a>
-            </div>
-
-
-            <div class="volunteer">
-                <img src="/images/Frame 41.svg" alt="group picture">
-
-                <h1 class="groupH">VOLUNTEER
-                </h1>
-                <p class="groupP">Be part of the team volunteering to do some works at an event or at the college.</p>
-
-                <a href="volunteer.html" target="_blank" class="btn-secondary" type="submit">VOLUNTEER</a>
-            </div>
+            <a href="alumninetwork.html" target="_blank" class="btn-secondary" type="submit">ALUMNI NETWORK</a>
+        </div>
 
 
-            <div class="events">
-                <img src="/images/Frame 43.svg" alt="group picture">
+        <div class="donate">
+            <img src="/public/images/Frame 35.svg" alt="group picture">
 
-                <h1 class="groupH">EVENTS
-                </h1>
-                <p class="groupP">Past events and meeting.</p>
+            <h1 class="groupH">DONATE</h1>
+            <p class="groupP">As an alumni, you can make donations towards the development and upgrade of the college.
+            </p>
 
-                <a href="events.html" target="_blank" class="btn-secondary" type="submit">EVENTS</a>
-            </div>
+            <a href="donate.html" target="_blank" class="btn-secondary" type="submit">DONATE</a>
+        </div>
 
-        </section>
+        <div class="projects">
+            <img src="/public/images/Mask group(1).svg" alt="group picture">
 
-        <%- include('./partials/footer') %>
+            <h1 class="groupH">PROJECTS
+            </h1>
+            <p class="groupP">Follow the usage of donations by keep track of ongoing project happening in the college.
+            </p>
+
+            <a href="projects.html" target="_blank" class="btn-secondary" type="submit">PROJECTS</a>
+        </div>
+
+        <div class="upcEvents">
+            <img src="/public/images/Frame 39.svg" alt="group picture">
+
+            <h1 class="groupH">UPCOMING EVENTS AND MEETINGS
+            </h1>
+            <p class="groupP">Explore upcoming events and meetings designed for Alumni to reconnect with other alumni of
+                the
+                college.</p>
+
+            <a href="upcomingevents.html" target="_blank" class="btn-secondary" type="submit">UPCOMING EVENTS AND
+                MEETINGS</a>
+        </div>
+
+
+        <div class="volunteer">
+            <img src="/public/images/Frame 41.svg" alt="group picture">
+
+            <h1 class="groupH">VOLUNTEER
+            </h1>
+            <p class="groupP">Be part of the team volunteering to do some works at an event or at the college.</p>
+
+            <a href="volunteer.html" target="_blank" class="btn-secondary" type="submit">VOLUNTEER</a>
+        </div>
+
+
+        <div class="events">
+            <img src="/public/images/Frame 43.svg" alt="group picture">
+
+            <h1 class="groupH">EVENTS
+            </h1>
+            <p class="groupP">Past events and meeting.</p>
+
+            <a href="events.html" target="_blank" class="btn-secondary" type="submit">EVENTS</a>
+        </div>
+
+    </section>
+
+
 </body>
 
 </html>

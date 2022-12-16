@@ -37,7 +37,7 @@
 <details>
   <summary>Design</summary>
   <ul>
-    <li><a href="(https://www.figma.com/file/1ZKDWHvbgCinMSTUWrMqHJ/Low-and-high-Fidelity-Desktop-screens?node-id=0%3A1&t=B3RMpEoEgrT2UuhL-1)">Figma Design Link</a></li>
+    <li><a href="[https://www.figma.com/file/1ZKDWHvbgCinMSTUWrMqHJ/Low-and-high-Fidelity-Desktop-screens?node-id=0%3A1&t=B3RMpEoEgrT2UuhL-1]">Figma Design Link</a></li>
   </ul>
 </details>
 

@@ -5,7 +5,10 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const connectToDb = require('./dbConnect')
+const session= require('express-session');
+const flash=require('connect-flash');
+const connectToDb = require('./dbConnect');
+
 
 
 var indexRouter = require('./routes/index');
@@ -22,6 +25,11 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(session({secret:'teambadgerw2',
+                 saveUninitialized: true,
+                   resave: true
+}));
+app.use(flash());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);

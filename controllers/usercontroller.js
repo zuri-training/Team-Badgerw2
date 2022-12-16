@@ -38,7 +38,7 @@ const signup = async (req, res) => {
     }*/
     const oldUser = await alumni.findOne({ email });
     if (oldUser) {
-      req.flash("Alumni Exist, Please Login. ");
+      req.flash("failure",Alumni Exist, Please Login. ");
     }
     const hashpassword = await bcrypt.hash(password, 12);
     const newUser = new alumni({
@@ -57,10 +57,10 @@ const signup = async (req, res) => {
 
     const user = await newUser.save();
 
-    req.flash(`You have succesfully registered ${user.firstname}`);
+    //req.flash('success,`You have succesfully registered ${user.firstname}`);
     res.redirect('dashboard',{user:user})
   } catch (error) {
-    req.flash('An error occur, cannot register user');
+    req.flash('error',An error occur, cannot register user');
   }
 };
 

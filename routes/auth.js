@@ -12,6 +12,7 @@ const loginController = require('../controllers/logincontroller');
 const signupController = require('../controllers/signup');
 const dashboardController = require('../controllers/dashboard');
 const pageController = require('../controllers/createpage');
+const donationFormController = require('../controllers/donationpageform');
 
 
 passport.use(new LocalStrategy({

@@ -11,6 +11,8 @@ const userController = require('../controllers/usercontroller');
 const loginController = require('../controllers/logincontroller');
 const signupController = require('../controllers/signup');
 const dashboardController = require('../controllers/dashboard');
+const pageController = require('../controllers/createpage');
+
 
 passport.use(new LocalStrategy({
   usernameField: 'alumni[email]',
@@ -39,13 +41,19 @@ passport.deserializeUser(function (id, done) {
     done(err, user);
   });
 });
-
+function isLoggedIn(req, res, next) {
+  if (req.isAuthenticated()) return next();
+  res.redirect("/login");
+}
 router.get('/login', loginController.loginform);
 
 router.post('/login/password', passport.authenticate('local', {
   failureRedirect: '/login'
 }), dashboardController.dashboardcont
 );
+router.get('/donationform', isLoggedIn, donationFormController.donationPageCont);
+router.get('/createpage', isLoggedIn, pageController.createPageCont);
+
 
 router.get('/about',function(req,res){
   res.render('about');
@@ -57,4 +65,16 @@ router.get('/faculties',function(req,res){
 
 router.get('/signup', signupController.signUpCont);
 router.post('/signup/alumni', userController.signup);
+router.get('/about', function (req, res) {
+  res.render('about');
+})
+router.get('/faculties', function (req, res) {
+  res.render('faculties');
+})
+router.get('/academic', function (req, res) {
+  res.render('academic');
+})
+router.get('/donate', function (req, res) {
+  res.render('donate');
+})
 module.exports = router;

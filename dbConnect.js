@@ -8,7 +8,7 @@ const connectToDb = ()=>{
     mongoose.connection.on('connected', ()=>{
         console.log("connected to MongoDb successfully")
     })
-    mongoose.connection.on('error', ()=>{
+    mongoose.connection.on('error', (error)=>{
         console.log("An error occurred", error)
     })
 }

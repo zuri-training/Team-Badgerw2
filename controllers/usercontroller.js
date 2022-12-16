@@ -40,7 +40,6 @@ const signup = async (req, res) => {
     if (oldUser) {
       return res.status(409).send("An Alumni Exist");
       }
-    }
     const hashpassword = await bcrypt.hash(password, 12);
     const newUser = new alumni({
       firstName,

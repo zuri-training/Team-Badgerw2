@@ -48,12 +48,10 @@ function isLoggedIn(req, res, next) {
 }
 router.get('/login', loginController.loginform);
 
-router.post('/login/password', passport.authenticate('local', {
-  failureRedirect: '/login'
-}), dashboardController.dashboardcont
+router.post('/login/password', passport.authenticate('local', dashboardController.dashboardcont
 );
-//router.get('/donationform', isLoggedIn, donationFormController.donationPageCont);
-router.get('/createpage', isLoggedIn, pageController.createPageCont);
+//router.get('/donationform', donationFormController.donationPageCont);
+router.get('/createpage', pageController.createPageCont);
 
 
 router.get('/about',function(req,res){

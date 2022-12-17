@@ -2,140 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@1,800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/public/stylesheets/dashboard.css">
-    <title>Dashboard</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Creation Page</title>
+  <link rel='stylesheet'  href='stylesheets/donation.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+<body class="main-content">
+    <div class="container">
+<header>
+    <div class="menu-icon">
+        <img src="/images/menu.svg" alt="menu icon">
+        
+    </div>
+    <div class="header-item">
+      <div class="grad-cap"><img src="/images/image 25.png" alt="graduation cap"> 
+    </div>    
+    <div class="header-text">
+        <h2>BADGERW2 COLLEGE</h2>
+        <h3>Knowledge To The World</h3>
+    </div>
+    </div>
 
-<body>
+</header>
+<section class="top-card">
+    
+        <div class="proj-header">
+            <h3>PROJECT BUILD A FACULTY</h3>
+    </div>
+        <div class="proj-con">
+        <div class="project-text">
+            <p class="project-type">Project Target</p>
+            <p class="value-text" >2,000,000,000</p>
+        </div>
+        <div class="project-text">
+            <p class="project-type">Current Balance</p>
+            <p class="value-text">200,000,000</p>
+        </div>
+        <div class="project-text">
+            <p class="project-type" >Donors</p>
+            <p class="value-text">10</p>
+        </div>
+    </div>
+    <div class="project-progress">
+        <div class="bar"></div>
+        <div class="dot"></div>
+        <div class="pro-text"><p>10% </p></div>
+    </div>
+    
+</section>
 
-    <header>
-        <nav class="nav-bar">
-            <img src="/images/logo-1-1.png" alt="">
-
-            <input type="checkbox" id="toggle-menu">
-            <label class="menu-icon" for="toggle-menu">
-                <a id="menu-icon"><i class="fa fa-bars"></i></a>
-            </label>
-
-            <div id="navigation-bar" class="nav-links">
-                <a href="/home"> HOME </a>
-                <a href="/about"> ABOUT US</a>
-                <a href="/alumni"> ALUMNI </a>
-                <a href="/alumni"> CONTACT US </a>
+<section class="body-card">
+    <form class="payment" action="" method="POST">
+        <div class="grid-element">
+            <div class="form-element">
+                <label for="fullname">FullName <span class="star">*</span></label>
+                <input  type="text"id="fullname" required>
             </div>
-        </nav>
-    </header>
+            <div class="form-element">
+                <label for="address">Address </label>
+                <input  type="text"id="address" name="address" required>
+            </div>
+            <div class="form-element">
+                <label for="email">Email <span class="star">*</span> </label>
+                <input  type="text" id="email" name="email" required>
+            </div>
+            <div class="city-post">
+                <div class="form-element">
+                    <label for="city">City </label>
+                    <input  type="text"id="city" >
+                </div>
+                <div class="form-element">
+                    <label for="post-code">Post Code</label>
+                    <input  type="text"id="post-code" >
+                </div>
+    
+            </div>
+    </div>
+    <div class="form-element">
+        <label for="address">Phone no <span class="star">*</span></label>
+        <input  type="text"id="phone no" placeholder="(000)-000-000" required>
+    </div>
+    
+    <div class="form-element">
+        
+        <label for="address">Country of Residence </label>
+    
+    
+        <input type="text"  id="country" >
+    
+    </div>
+    
+    <button class="btn-secondary" type="submit">MAKE PAYMENT</button>
+    </form>
 
-
-    <section class="hero-image">
-        <div class="hero">
-            <ul class="hero__lblock" style="margin-top: 150px">
-                <label for="hamburger"><img src="/public/images/hamburger.svg" alt=""></label>
-            </ul>
-
-            <ul class="hero__caplogo" style="margin-top: 150px">
-                <img class="logo" src="/public/images/grad-cap.svg" alt="logo">
-            </ul>
-
-            <ul class="hero-text">
-                <h1 class="hero-h1">BADGERW2 COLLEGE <p class="hero-p">Knowledge to the world</p>
-            </ul>
-        </div>
-
-        <div class="search-bar">
-            <input class="search-input" width="1030px" height="50px" type="text">
-            <img class="search-img" src="/public/images/search-icon (1) 1.svg" alt="">
-        </div>
-    </section>
-
-    <section class="user">
-        <h1>WELCOME OLAWALE ADAMU EZE</h1>
-        <div>
-            <img src="/public/images/Ellipse 30.svg" alt="" class="circle">
-        </div>
-    </section>
-
-    <hr class="hrLine">
-
-    <section>
-        <div class="maskG">
-            <img src="/images/Mask group.svg" alt="group picture">
-
-            <h1 class="groupH">ALUMNI NETWORK</h1>
-            <p class="groupP">Connect with your set, sets before and after.</p>
-
-            <a href="alumninetwork.html" target="_blank" class="btn-secondary" type="submit">ALUMNI NETWORK</a>
-        </div>
-
-
-        <div class="donate">
-            <img src="/images/Frame 35.svg" alt="group picture">
-
-            <h1 class="groupH">DONATE</h1>
-            <p class="groupP">As an alumni, you can make donations towards the development and upgrade of the college.
-            </p>
-
-            <a href="/donate" target="_blank" class="btn-secondary" type="submit">DONATE</a>
-        </div>
-
-        <div class="projects">
-            <img src="/images/Mask group(1).svg" alt="group picture">
-
-            <h1 class="groupH">PROJECTS
-            </h1>
-            <p class="groupP">Follow the usage of donations by keep track of ongoing project happening in the college.
-            </p>
-
-            <a href="/createpage" target="_blank" class="btn-secondary" type="submit">PROJECTS</a>
-        </div>
-
-        <div class="upcEvents">
-            <img src="/images/Frame 39.svg" alt="group picture">
-
-            <h1 class="groupH">UPCOMING EVENTS AND MEETINGS
-            </h1>
-            <p class="groupP">Explore upcoming events and meetings designed for Alumni to reconnect with other alumni of
-                the
-                college.</p>
-
-            <a href="upcomingevents.html" target="_blank" class="btn-secondary" type="submit">UPCOMING EVENTS AND
-                MEETINGS</a>
-        </div>
-
-
-        <div class="volunteer">
-            <img src="/images/Frame 41.svg" alt="group picture">
-
-            <h1 class="groupH">VOLUNTEER
-            </h1>
-            <p class="groupP">Be part of the team volunteering to do some works at an event or at the college.</p>
-
-            <a href="volunteer.html" target="_blank" class="btn-secondary" type="submit">VOLUNTEER</a>
-        </div>
-
-
-        <div class="events">
-            <img src="/images/Frame 43.svg" alt="group picture">
-
-            <h1 class="groupH">EVENTS
-            </h1>
-            <p class="groupP">Past events and meeting.</p>
-
-            <a href="events.html" target="_blank" class="btn-secondary" type="submit">EVENTS</a>
-        </div>
-
-    </section>
-
-
+</section>
+</div>
 </body>
 
 </html>

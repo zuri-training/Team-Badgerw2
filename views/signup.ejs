@@ -27,99 +27,102 @@
             <h2 class="college-motto">Knowledge to the world</h2>
             <div class="search-bar">
                 <input class="search-input" width="800px" height="50px" type="text">
-                <img class="search-img" src="/images/search.png" alt="">
+                <img class="search-img" src="./image/search.png" alt="">
             </div>
         </section>
-          <section class="form-container">
-        <div>
-            <h1 class="Sign-up">CREATE YOUR ALUMNI ACCOUNT</h1>
+        <section class="form-container">
+            <div>
 
-            <form class="alumni" action="/signup/alumni" method="POST">
-                <label class="action">First name</label>
-                <div class="input-field">
-                    <input type="text" placeholder="Olawale" id="F_name" name="firstname" required>
-                </div>
+                <h1 class="Sign-up">CREATE YOUR ALUMNI ACCOUNT</h1>
 
-                <label class="action">Middle name</label>
-                <div class="input-field">
-                    <input type="text" placeholder="Adamu"name="middlename">
-                </div>
-
-                <label class="action">Last name</label>
-                <div class="input-field">
-                    <input type="text" placeholder="Eze" id="L_name" name="lastname" required>
-                </div>
-
-                <label class="action">Date of Birth</label>
-                <div class="input-field">
-                    <input type="date" placeholder="20/05/2000" name="dob" id="date" required>
-                </div>
-
-                <label>Gender</label>
-                <div class="input-field">
-                    <div class="custom-select">
-                        <select name="gender">
-                            <option value="Male">Female</option>
-                            <option value="Male">Male</option>
-                        </select>
+                <form class="alumni" action="/signup/alumni" method="POST">
+                    <label class="action">First name</label>
+                    <div class="input-field">
+                        <input type="text" placeholder="Olawale" id="F_name" name="firstname" required>
                     </div>
-                </div>
 
-                <label class="action">Year of Admission</label>
-                <div class="input-field">
-                    <input type="date" placeholder="20/10/2011" id="YOA" name="yearofadmission" required>
-                </div>
+                    <label class="action">Middle name</label>
+                    <div class="input-field">
+                        <input type="text" placeholder="Adamu" name="middlename">
+                    </div>
 
-                <label class="action">Year of Graduation</label>
-                <div class="input-field">
-                    <input type="date" placeholder="20/19/2011" id="YOG" name="yearofgrad" required>
-                </div>
+                    <label class="action">Last name</label>
+                    <div class="input-field">
+                        <input type="text" placeholder="Eze" id="L_name" name="lastname" required>
+                    </div>
 
-                <label class="action">Faculty</label>
-                <div class="input-field">
-                    <input type="text" placeholder="Engineering" id="faculty" name="faculty" required>
-                </div>
+                    <label class="action">Date of Birth</label>
+                    <div class="input-field">
+                        <input type="date" placeholder="20/05/2000" name="dob" id="date" required>
+                    </div>
 
-                <label class="action">Department</label>
-                <div class="input-field">
-                    <input type="text" placeholder="Electrical and Electronics Engineering" id="department" name="department" required>
-                </div>
+                    <label>Gender</label>
+                    <div class="input-field">
+                        <div class="custom-select">
+                            <select name="gender">
+                                <option value="Gender">Select</option>
+                                <option value="Male">Female</option>
+                                <option value="Male">Male</option>
+                            </select>
+                        </div>
+                    </div>
 
-                <label class="action">Matric Number</label>
-                <div class="input-field">
-                    <input type="" placeholder="BAD/10/0476" id="matric-no" name="regno" required>
-                </div>
+                    <label class="action">Year of Admission</label>
+                    <div class="input-field">
+                        <input type="date" placeholder="20/10/2011" id="YOA" name="yearofadmission" required>
+                    </div>
 
-                <label class="action">E-mail address</label>
-                <div class="input-field">
-                    <input type="email" placeholder="olawaleadameze@gmail.com" id="mail" name="email" required>
-                </div>
-                <label class="action">Password</label>
-                <div class="input-field">
-                    <input type="password" placeholder="*****" id="password" name="password" required>
-                </div>
-                <label class="action">Phone no</label>
-                  <div class="input-field">
-                    <input type="number" placeholder="08065289229" id="number" name="phoneno" required>
-                </div>      
-                <p>
-                <h4>Verify you are a student of our college by uploading your school identification card</h4>
-                </p>
+                    <label class="action">Year of Graduation</label>
+                    <div class="input-field">
+                        <input type="date" placeholder="20/19/2011" id="YOG" name="yearofgrad" required>
+                    </div>
+
+                    <label class="action">Faculty</label>
+                    <div class="input-field">
+                        <input type="text" placeholder="Engineering" id="faculty" name="faculty" required>
+                    </div>
+
+                    <label class="action">Department</label>
+                    <div class="input-field">
+                        <input type="text" placeholder="Electrical and Electronics Engineering" id="department"
+                            name="department" required>
+                    </div>
+
+                    <label class="action">Matric Number</label>
+                    <div class="input-field">
+                        <input type="" placeholder="BAD/10/0476" id="matric-no" name="regno" required>
+                    </div>
+
+                    <label class="action">E-mail address</label>
+                    <div class="input-field">
+                        <input type="email" placeholder="olawaleadameze@gmail.com" id="mail" name="email" required>
+                    </div>
+                    <label class="action">Password</label>
+                    <div class="input-field">
+                        <input type="password" placeholder="*****" id="password" name="password" required>
+                    </div>
+                    <label class="action">Phone no</label>
+                    <div class="input-field">
+                        <input type="number" placeholder="08065289229" id="number" name="phoneno" required>
+                    </div>
+                    <p>
+                    <h4>Verify you are a student of our college by uploading your school identification card</h4>
+                    </p>
 
 
-                <select>
-                    <div class="select">
-                        <option value="select image">Select Image</option>
-                        <option value="select image">Image</option>
-                </select>
-        </div>
-        <!-----------------SIGN UP---------------->
-        
-            <button class="submit-button" type="submit">SIGN UP</button>
-       
+                    <select>
+                        <div class="select">
+                            <option value="select image">Select Image</option>
+                            <option value="select image">Image</option>
+                    </select>
+                    <button class="submit-button" type="submit">SIGN UP</button>
+                </form>
 
-        </form>
-</section>
+            </div>
+            <!-----------------SIGN UP---------------->
+
+        </section>
+
     </body>
 
 </html>

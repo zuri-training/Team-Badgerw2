@@ -28,43 +28,49 @@
     <!----HEAD BOTTOM---->
 
     <!----Login info text---->
-    <div class="login-main">
-        <h1>LOGIN TO YOUR ALUMNI ACCOUNT</h1>
-    </div>
+    <section class="form-container">
+        <div class="login-main">
+            <h1>LOGIN TO YOUR ALUMNI ACCOUNT</h1>
+        </div>
 
-    <!---FORM FOR EMAIL AND PASSWORD---->
-    <form action="/login/password" method="POST">
-        <label class="action">Email-mail address</label>
+        <!---FORM FOR EMAIL AND PASSWORD---->
+        <form action="/login/password" method="POST">
+            <label class="action">Email-mail address</label>
+            <div class="input-field">
+                <input type="text" name="email" class="input" placeholder="olawaleadameze@gmail.com" required>
+
+            </div>
+            <label class="action">Password</label>
+            <div class="input-field">
+                <input type="password" name="password" class="input" placeholder="*******" required>
+                <i class="uil uil-eye-slash showHidePW"></i>
+            </div>
+
+            <!----CHECKBOX AND REMEMBER ME FORGOT PASSWORD LINK----->
+            <div class="bottom">
+                <div class="left">
+                    <input class="checkbox" type="checkbox">Remember me
+                    <label for="check"></label>
+                </div><a href="">Forgot Password?</a></label>
+            </div>
+            </div>
+
+            <!-----LOGIN AND CREATE ACCOUNT BUTTON---->
+
+            <div class="input-field">
+                <button type="submit" class="submit submit-button">LOGIN</button>
+            </div>
+
+
+
+
+        </form>
+
         <div class="input-field">
-            <input type="text" name="email" class="input" placeholder="olawaleadameze@gmail.com" required>
-
-        </div>
-        <label class="action">Password</label>
-        <div class="input-field">
-            <input type="password" name="password" class="input" placeholder="*******" required>
-            <i class="uil uil-eye-slash showHidePW"></i>
+            <button class="submit submit-button"><a href="/signup">SIGN UP</a></button>
         </div>
 
-        <!----CHECKBOX AND REMEMBER ME FORGOT PASSWORD LINK----->
-        <div class="bottom">
-            <div class="left">
-                <input class="checkbox" type="checkbox">Remember me
-                <label for="check"></label>
-            </div><a href="">Forgot Password?</a></label>
-        </div>
-        </div>
-
-        <!-----LOGIN AND CREATE ACCOUNT BUTTON---->
-        <div class="input-field">
-            <button  type="submit" class="submit-login">LOGIN</button>
-        </div>
-
-        <div class="input-field">
-            <button class="submit-login"><a href="/signup"><span class="button">SIGN UP</span></a></button>
-        </div>
-
-    </form>
-
+    </section>
 </body>
 
 </html>

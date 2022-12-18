@@ -72,6 +72,9 @@ router.get('/faculties', function (req, res) {
 router.get('/academic', function (req, res) {
   res.render('academic');
 })
+router.get('/payment', function (req, res) {
+  res.render('payment');
+})
 router.get('/donate', function (req, res) {
   res.render('donate');
 })

@@ -58,7 +58,7 @@ const signup = async (req, res) => {
     const user = await newUser.save();
 
     //req.flash('success,`You have succesfully registered ${user.firstname}`);
-    res.redirect('dashboard',{user:user})
+    res.render('dashboard',{user:user})
   } catch (error) {
     return res.status(500).send("An Error occurred ");
   }
@@ -83,7 +83,7 @@ const login = async (req, res) => {
   
       const { password, ...others } = user._doc;
       
-      res.redirect('dashboard',{user:user});
+      res.render('dashboard',{user:user});
     } catch (error) {
       return res.status(500).send("An error occurred");
       }

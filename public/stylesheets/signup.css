@@ -24,7 +24,7 @@ body {
     background: #092C4C;
   }
   .bg-img{
-    background-image: url("../image/image\ 2.png");
+    background-image: url("/images/image 2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;

@@ -58,7 +58,7 @@ const signup = async (req, res) => {
     const user = await newUser.save();
 
     //req.flash('success,`You have succesfully registered ${user.firstname}`);
-    res.render('dashboard',{username:user.firstName})
+    res.render('dashboard',{user:user})
   } catch (error) {
     return res.status(500).send("An Error occurred ");
   }

@@ -24,7 +24,6 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-const mongoStore = require('connect-mongo');
 app.use(flash());
 app.use(express.static(path.join(__dirname, 'public')));
 

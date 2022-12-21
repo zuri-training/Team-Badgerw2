@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>
+        Donation Link
+    </title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/sharelink.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <img src="/images/logo-1-1.png" alt="">
+
+            <input type="checkbox" id="toggle-menu">
+            <label class="menu-icon" for="toggle-menu">
+                <a id="menu-icon"><i class="fa fa-bars"></i></a>
+            </label>
+
+            <div id="navigation-bar" class="nav-links">
+                <a href="/home"> HOME </a>
+                <a href="/about"> ABOUT US</a>
+                <a href="/alumni"> ALUMNI </a>
+                <a href="/contact"> CONTACT US </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="hero-image">
+        <div class="hero">
+
+            <ul class="hero__lblock" style="margin-top: 150px">
+                <label for="hamburger"><img src="/images/hamburger.svg" alt=""></label>
+            </ul>
+
+            <ul class="hero__caplogo" style="margin-top: 150px">
+                <img class="logo" src="/images/grad-cap.svg" alt="logo">
+            </ul>
+
+            <ul class="hero-text">
+                <h1 class="hero-h1">BADGERW2 COLLEGE <p class="hero-p">Knowledge to the world</p>
+            </ul>
+        </div>
+    </section>
+    <section class="container">
+        <section class="top-card">
+
+            <div class="proj-header">
+                <h3>DONATION LINK</h3>
+            </div>
+            <div class="">
+                <div class="share-text">
+                    <p>
+                        This is a donation link shared by TeamBadger2 College to raise fund for the college to execute
+                        important projects
+                        in the college.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="body-card">
+            <form class="payment" action="/payment" method="POST">
+                <div class="grid-element">
+                    <div class="form-element">
+                        <label for="fullname">FullName <span class="star">*</span></label>
+                        <input type="text" id="fullname" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="address">Address </label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="email">Email <span class="star">*</span> </label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="city-post">
+                        <div class="form-element">
+                            <label for="city">City </label>
+                            <input type="text" id="city">
+                        </div>
+                        <div class="form-element">
+                            <label for="post-code">Post Code</label>
+                            <input type="text" id="post-code">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-element">
+                    <label for="address">Phone no <span class="star">*</span></label>
+                    <input type="text" id="phone no" placeholder="(000)-000-000" required>
+                </div>
+
+                <div class="form-element">
+
+                    <label for="address">Country of Residence </label>
+
+
+                    <input type="text" id="country">
+
+                </div>
+
+                <button class="btn-secondary" type="submit">DONATE</button>
+            </form>
+
+        </section>
+
+
+        </sextion>
+</body>
+
+</html>

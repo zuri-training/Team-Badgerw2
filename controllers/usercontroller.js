@@ -61,8 +61,7 @@ const signup = async (req, res) => {
     const user = await newUser.save();
 
    res.render('login', {
-      message:"You have Succesfully Registered ",
-      user: user
+      message:"You have Succesfully Registered "
     })
   } catch (error) {
     return res.render('signup', {
@@ -98,7 +97,7 @@ const login = async (req, res) => {
       const { password, ...others } = user._doc;
       
       res.render('dashboard', {
-      user: user
+      
 
     });
     } catch (error) {

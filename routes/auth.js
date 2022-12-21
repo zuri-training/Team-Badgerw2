@@ -58,7 +58,7 @@ router.get('/flash', function (req, res) {
   });
   res.redirect('/login');
   res.redirect('/signup');
-})
+});
 router.get('/login', loginController.loginform);
 
 router.post('/login', userController.login);
@@ -67,19 +67,13 @@ router.get('/createpage', isLoggedIn, pageController.createPageCont);
 
 
 router.get('/about', function (req, res) {
-  res.render('about', {
-    title: "About",
-    css: '/stylesheets/about.css'
-  });
+  res.render('about');
 
-})
+});
 router.get('/faculties', function (req, res) {
-  res.render('faculties', {
-    title: "Faculties",
-    css: '/stylesheets/about.css'
-  });
+  res.render('faculties');
 
-})
+});
 
 
 router.get('/signup', signupController.signUpCont);
@@ -90,43 +84,27 @@ router.get('/dashboard', function (req, res) {
 });
 
 router.get('/academic', function (req, res) {
-  res.render('academic', {
-    title: "Academic",
-    css: '/stylesheets/about.css'
-  });
+  res.render('academic');
 
-})
+});
 router.get('/donate', isLoggedIn, function (req, res) {
   console.log(req.session.user)
-  res.render('donate', {
-    title: "Donate",
-    css: '/stylesheets/donate.css'
-  });
+  res.render('donate');
 
-})
+});
 router.get('/alumni', function (req, res) {
-  res.render('alumni', {
-    title: "Alumni",
-    css: '/stylesheets/about.css'
-  });
+  res.render('alumni');
 
-})
+});
 router.get('/contact', function (req, res) {
-  res.render('contact', {
-    title: "About",
-    css: '/stylesheets/about.css'
-  });
+  res.render('contact');
 
-})
+});
 
 
 
 router.post('/payment', function (req, res) {
-  res.render('payment', {
-    title: "Payment",
-    css: '/stylesheets/payment.css',
-    name: req.body.fullname
-  });
+  res.render('payment');
 })
 router.get('/share', function (req, res) {
 

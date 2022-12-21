@@ -207,6 +207,7 @@ select{
   margin-left:20px;
   text-decoration: none;
   text-align: center;
+    margin-top:10px;
   
  
 }
@@ -214,7 +215,13 @@ select{
 .submit-button:hover{
   background-color: #092C4C;
 }
+@media screen and (min-width:1000px){
 .form-container{
-    width:60%;
+    width:40%;
     margin:10px auto;
+}
+    .submit-button{
+        
+        margin-top:20px;
+    }
 }

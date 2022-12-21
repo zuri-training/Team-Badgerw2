@@ -88,7 +88,6 @@ router.get('/academic', function (req, res) {
 
 });
 router.get('/donate', isLoggedIn, function (req, res) {
-  console.log(req.session.user)
   res.render('donate');
 
 });

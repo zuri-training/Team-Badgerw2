@@ -9,5 +9,6 @@ exports.createPageCont = (req, res) => {
 
 
     res.render('createdonation');
-
+     console.log(req.session.user);
+   
 }

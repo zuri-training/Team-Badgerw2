@@ -97,6 +97,7 @@ const login = async (req, res) => {
       const { password, ...others } = user._doc;
       
       res.render('dashboard', {
+        user:user
       
 
     });

@@ -1,5 +1,5 @@
 var donation = require('../models/model').donations;
-exports.donationPageCont = (req, res) => {
+exports.donationPageCont = async (req, res) => {
 
   req.on('error', (error) => {
     console.log(error)

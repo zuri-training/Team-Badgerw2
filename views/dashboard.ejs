@@ -56,24 +56,27 @@
             <img class="search-img" src="/images/search-icon (1) 1.svg" alt="">
         </div>
     </section>
+<section class="container">
+        <section class="user">
+            <h1>
+                Welcome <%= user.firstName %>
+            </h1>
+            <div>
+                <img src="/images/Ellipse 30.svg" alt="" class="circle">
+            </div>
+        </section>
 
-    <section class="user">
-        <h1>Welcome <%= user.firstName %> </h1>
-        <div>
-            <img src="/images/Ellipse 30.svg" alt="" class="circle">
-        </div>
-    </section>
+        <hr class="hrLine">
 
-    <hr class="hrLine">
 
-    <section>
         <div class="maskG">
             <img src="/images/Mask group.svg" alt="group picture">
 
             <h1 class="groupH">ALUMNI NETWORK</h1>
             <p class="groupP">Connect with your set, sets before and after.</p>
 
-            <a href="#" target="" class="btn-secondary" type="submit">ALUMNI NETWORK</a>
+            <button class="btn-secondary share-link" type="submit">ALUMNI
+                NETWORK</button>
         </div>
 
 
@@ -84,7 +87,7 @@
             <p class="groupP">As an alumni, you can make donations towards the development and upgrade of the college.
             </p>
 
-            <a href="/donate" target="" class="btn-secondary" type="submit">DONATE</a>
+            <a href="/donation" target=" " class="btn-secondary" type="submit">DONATE</a>
         </div>
 
         <div class="projects">
@@ -95,20 +98,16 @@
             <p class="groupP">Follow the usage of donations by keep track of ongoing project happening in the college.
             </p>
 
-            <a href="/createpage" target="" class="btn-secondary" type="submit">PROJECTS</a>
+            <a href="/donate" target=" " class="btn-secondary" type="submit">PROJECTS</a>
         </div>
 
         <div class="upcEvents">
             <img src="/images/Frame 39.svg" alt="group picture">
 
-            <h1 class="groupH">UPCOMING EVENTS AND MEETINGS
-            </h1>
-            <p class="groupP">Explore upcoming events and meetings designed for Alumni to reconnect with other alumni of
-                the
-                college.</p>
+            <h1 class="groupH">SHARE DONATION LINK</h1>
+            <p class="groupP">Shrae a link to family and friends to make DONATION to your alma mata</p>
 
-            <a href="#" target="" class="btn-secondary" type="submit">UPCOMING EVENTS AND
-                MEETINGS</a>
+            <button class="btn-secondary share-link" type="submit" onclick="shareLink()">SHARE DONATION LINK</button>
         </div>
 
 
@@ -119,7 +118,7 @@
             </h1>
             <p class="groupP">Be part of the team volunteering to do some works at an event or at the college.</p>
 
-            <a href="#" target="" class="btn-secondary" type="submit">VOLUNTEER</a>
+            <button class="btn-secondary" type="submit">VOLUNTEER</button>
         </div>
 
 
@@ -130,12 +129,30 @@
             </h1>
             <p class="groupP">Past events and meeting.</p>
 
-            <a href="#" target="" class="btn-secondary" type="submit">EVENTS</a>
+            <button class="btn-secondary">EVENTS</button>
         </div>
 
     </section>
 
+    <script type="text/javascript">
+        const shareData = {
+            title: 'Donation',
+            text: 'Donation for my Alma matter',
+            url: 'http://localhost:3080/share'
+        }
+        const shareLink = async (event) => {
+            console.log("inside share link")
+            try {
+                await navigator.share(shareData)
+                console.log('Donation shared successfully')
+            } catch (err) {
+                console.log(err)
+            }
+        }
 
+
+    </script>
+    
 </body>
 
 </html>

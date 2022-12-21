@@ -61,7 +61,7 @@ const signup = async (req, res) => {
     const user = await newUser.save();
 
    res.render('login', {
-      message:" ",
+      message:"You have Succesfully Registered ",
       user: user
     })
   } catch (error) {

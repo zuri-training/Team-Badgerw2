@@ -7,9 +7,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const session= require('express-session');
 const flash=require('connect-flash');
+const mongoStore = require('connect-mongo');
 const connectToDb = require('./dbConnect');
-
-
 
 var indexRouter = require('./routes/index');
 var authRouter = require('./routes/auth');
@@ -25,10 +24,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(session({secret:'teambadgerw2',
-                 saveUninitialized: true,
-                   resave: true
-}));
+const mongoStore = require('connect-mongo');
 app.use(flash());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -50,6 +46,16 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+app.use(session({
+  secret: 'teambadgerw2',
+  saveUninitialized: false,
+  resave: false,
+  store: mongoStore.create({
+    mongoUrl: 'mongodb://127.0.0.1:27017',
+    touchAfter: 24 * 3600
+  })
+
+}));
 connectToDb()
 
 app.listen(PORT, ()=>{

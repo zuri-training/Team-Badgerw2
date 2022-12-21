@@ -103,7 +103,8 @@ router.get('/contact', function (req, res) {
 
 
 router.post('/payment', function (req, res) {
-  res.render('payment');
+  res.render('payment',{
+            name: req.body.fullname });
 })
 router.get('/share', function (req, res) {
 

@@ -103,7 +103,7 @@ top: -1px; */
 
 
 .hero-image {
-  background-image: url(/public/images/hero-big.svg);
+  background-image: url("/images/hero-big.svg");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 3000px rgba(0, 0, 0, 0.5) inset;

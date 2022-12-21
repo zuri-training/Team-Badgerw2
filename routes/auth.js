@@ -64,6 +64,7 @@ router.get('/login', loginController.loginform);
 router.post('/login/password', userController.login);
 router.get('/donation', isLoggedIn, donationFormController.donationPageCont);
 router.get('/createpage', isLoggedIn, pageController.createPageCont);
+router.post('/donation', isLoggedIn, donationFormController.donationPageCont);
 
 
 router.get('/about', function (req, res) {

@@ -8,6 +8,11 @@ exports.loginform = (req, res) => {
     )
 
 
-    res.render('login');
+    res.render('login', {
+        message: "",
+        error: ""
+        
+    });
+
 
 }

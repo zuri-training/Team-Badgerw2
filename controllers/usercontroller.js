@@ -95,7 +95,10 @@ const login = async (req, res) => {
       }
   
       const { password, ...others } = user._doc;
-      
+      req.session.user = {
+      'id': user.id,
+      'name': user.firstName
+    };
       res.render('dashboard', {
         user:user
       

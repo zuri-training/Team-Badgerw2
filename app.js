@@ -1,5 +1,6 @@
-
+require('dotenv').config()
 require('./models/model');
+const MONGOOSE_URL = process.env.MONGOOSE_URL
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -31,7 +32,7 @@ app.use(session({
   saveUninitialized: false,
   resave: false,
   store: mongoStore.create({
-    mongoUrl: 'mongodb://127.0.0.1:27017',
+    mongoUrl: MONGOOSE_URL,
     touchAfter: 24 * 3600
   })
 

@@ -31,6 +31,14 @@
             </div>
         </section>
         <section class="form-container">
+                <div class="message">
+            <% if(message){%>
+                <h3>
+                    <%= message %>
+                </h3>
+                <%= error %>
+                    <%}%>
+        </div>
             <div>
 
                 <h1 class="Sign-up">CREATE YOUR ALUMNI ACCOUNT</h1>
@@ -60,7 +68,6 @@
                     <div class="input-field">
                         <div class="custom-select">
                             <select name="gender">
-                                <option value="Gender">Select</option>
                                 <option value="Male">Female</option>
                                 <option value="Male">Male</option>
                             </select>

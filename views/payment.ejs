@@ -33,63 +33,75 @@
         </div>
         <!-- END OF HEADER SECTION -->
 
-        <!-- PAYMENT INFORMATION SECTION -->
-        <div class="pay-info">
-            <h1>Payment Infomation</h1>
-        </div>
+        <section class="container">
+        <form action="">
+            <article class="amount">
+                <p>Amount</p>
+                <input type="text" name="" id="amount" class="amount-input" placeholder="₦100,000">
+            </article>
 
-        <article class="amount">
-            <p>Amount</p>
-            <input type="text" name="" id="amount" class="amount-input" placeholder="₦100,000">
-        </article>
+            <article class="pay-title">
+                <p>Payment Details</p>
+            </article>
+            <!-- END OF PAYMENT INFORMATION SECTION -->
 
-        <article class="pay-title">
-            <p>Payment Details</p>
-        </article>
-        <!-- END OF PAYMENT INFORMATION SECTION -->
+            <!-- DETAILS SECTION -->
 
-        <!-- DETAILS SECTION -->
+            <section class="payment-details">
+                <div class="details">
+                    <p>Name:<span class="active">
+                            <%=name %>
 
-        <section class="payment-details">
-            <div class="details">
-                <p>Name:<span class="active">Olawale Eze Adamu</span></p>
+                        </span></p>
+                </div>
+                <div class="details">
+                    <p>Donated to:<span><select name="purpose">
+                                <option value="Build a laboratory">Build a laboratory</option>
+                                <option value="Adopt a Student">Adopt a Student</option>
+                                <option value="Build a faculty">Build a faculty</option>
+                            </select></span></p>
+                </div>
+                <div class="details">
+                    <p>Frequency:<span><select name="interval">
+                                <option value="one-time">One time donation</option>
+                                <option value="monthly">Monthly</option>
+                                <option value="quarterly">Quarterly</option>
+                            </select>
+                        </span></p>
+                </div>
+            </section>
+
+            <div class="payment-mode">
+                <p>Mode of payment:</p>
             </div>
-            <div class="details">
-                <p>Donated to:<span>Build a laboratory</span></p>
+
+            <article class="mode">
+                <p>Credit/Debit Card</p>
+                <p>Credit/Debit Card</p>
+                <p>Credit/Debit Card</p>
+                <p>Credit/Debit Card</p>
+            </article>
+            <div class="payment-mode">
+                <p>Credit Card Information</p>
             </div>
-            <div class="details">
-                <p>Frequency:<span>One time donation</span></p>
+
+            <div class="card-input">
+                <input type="text" placeholder="Name on card">
+                <input type="text" placeholder="Card Number">
             </div>
-        </section>
+            <div class="card-input">
+                <input type="text" placeholder="Expiration">
+                <input type="text" placeholder="CVV">
+            </div>
 
-        <div class="payment-mode">
-            <p>Mode of payment:</p>
-        </div>
-
-        <article class="mode">
-            <p>Credit/Debit Card</p>
-            <p>Credit/Debit Card</p>
-            <p>Credit/Debit Card</p>
-            <p>Credit/Debit Card</p>
-        </article>
-        <div class="payment-mode">
-            <p>Credit Card Information</p>
-        </div>
-
-        <div class="card-input">
-            <input type="text" placeholder="Name on card">
-            <input type="text" placeholder="Card Number">
-        </div>
-        <div class="card-input">
-            <input type="text" placeholder="Expiration">
-            <input type="text" placeholder="CVV">
-        </div>
-
-        <article class="payment-btn">
-            <button type="submit">MAKE PAYMENT</button>
-        </article>
-        <!--  END OF DETAILS SECTION -->
+            <article class="payment-btn">
+                <button type="submit">MAKE PAYMENT</button>
+            </article>
     </section>
-</body>
+    </form>
+    <!--  END OF DETAILS SECTION -->
+    </section>
 
-</html>
+    </body>
+
+    </html>

@@ -8,6 +8,9 @@ exports.signUpCont = (req, res) => {
   )
 
 
-  res.render('signup');
+  res.render('signup', {
+    message: "",
+    error: ""
+  });
 
 }

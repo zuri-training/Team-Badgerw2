@@ -30,7 +30,7 @@
 <section class="top-card">
     
         <div class="proj-header">
-            <h3>PROJECT BUILD A FACULTY</h3>
+            <h3>Donation Form</h3>
     </div>
         <div class="proj-con">
         <div class="project-text">
@@ -39,17 +39,17 @@
         </div>
         <div class="project-text">
             <p class="project-type">Current Balance</p>
-            <p class="value-text">200,000,000</p>
+            <p class="value-text"><%= amounts %></p>
         </div>
         <div class="project-text">
             <p class="project-type" >Donors</p>
-            <p class="value-text">10</p>
+            <p class="value-text"> <%= donors %></p>
         </div>
     </div>
     <div class="project-progress">
         <div class="bar"></div>
         <div class="dot"></div>
-        <div class="pro-text"><p>10% </p></div>
+        <div class="pro-text"><p>   <%- (parseInt(amounts)/20000000)*100 %> %</p></div>
     </div>
     
 </section>

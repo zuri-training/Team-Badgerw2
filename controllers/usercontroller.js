@@ -39,7 +39,7 @@ const signup = async (req, res) => {
     const oldUser = await alumni.findOne({ email });
     if (oldUser) {
       return res.render('signup', {
-        message: req.flash("register-failure"),
+        message:" ",
         error: "An Alumni exist"
       });
       }
@@ -61,12 +61,12 @@ const signup = async (req, res) => {
     const user = await newUser.save();
 
    res.render('login', {
-      message: req.flash('register-success'),
+      message:" ",
       user: user
     })
   } catch (error) {
     return res.render('signup', {
-      message: req.flash("register-failure"),
+      message: " ",
       error: error
     });
   }
@@ -80,7 +80,7 @@ const login = async (req, res) => {
   
       if (!user) {
          return res.render('login', {
-        message: req.flash('login-failure'),
+        message: " ",
         error: "Invalid Email"
       });
       }
@@ -90,7 +90,7 @@ const login = async (req, res) => {
       if (!match) {
      
         return res.render('login', {
-        message: req.flash('login-failure'),
+        message: " ",
         error: "Invalid Password"
       });
       }
